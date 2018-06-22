@@ -41,7 +41,7 @@ public class EditServlet extends HttpServlet {
         request.setAttribute("task", t);
         request.setAttribute("_token", request.getSession().getId());
 
-        if(t !=null){
+        if(t != null){
             request.getSession().setAttribute("task_id", t.getId());
 
         }
